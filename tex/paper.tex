@@ -1,0 +1,62 @@
+
+% Version history:
+
+
+
+
+
+\title{A Paper framework}
+%
+\author{Carsten~Wulff, \textit{Member, IEEE} }
+
+\maketitle
+
+\begin{abstract}
+This is a framework for writing papers, I've used it for JSSC publications. Feel free to use it for what you want.
+
+Carsten Wulff (Corresponding author), carste@wulff.no
+
+\end{abstract}
+\begin{IEEEkeywords}
+latex
+\end{IEEEkeywords}
+
+\section{Introduction} \label{introduction}
+
+
+\IEEEPARstart{W}{riting} beautiful papers is can be split into two, typesetting and content. I can't help you on the content, but this framework is something that's been developed over the years to do the typesetting with latex.
+
+\section{Getting Started}
+
+\begin{lstlisting}[frame=single,style=paperBashStyle]
+mkdir <whatever your paper is called>
+cd <whatever your paper is called>
+git clone https://github.com/wulffern/paper
+make -f paper/Makfile/Makefile install
+make all
+\end{lstlisting}
+
+\section{Directories}
+
+The "tex" directory contain the source files. It also will contain a couple examples on how to compile figures in tikz and circuitikz.
+
+
+\section{Figures}
+
+I would recommend that you make your figures using tikz. Yes, it takes time, but it's the only
+way I've found to make beautiful pictures. Like the methodology used in \cite{Wulff17} where I published \cite{ciccreator16}
+
+\begin{figure}[tb]
+\centerline{\includegraphics[width=\myfigwidth]{fig_process}}
+\caption{\secedit{Design methodology}}
+\label{fig_cic}
+\end{figure}
+
+Or the circuit tikz pictures that can be made, which was used in the same paper
+\begin{figure}[tb]
+\centerline{\includegraphics[width=\myfigwidth]{fig_comparator}}
+\caption{\edit{Strong-arm comparator with kick-back
+  compensation. Transistors without numbers are unit size, while
+  transistors with numbers are parallel combinations of unit transistors.}}
+\label{fig_comp}
+\end{figure}

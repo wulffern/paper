@@ -1,0 +1,51 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%        Copyright (c) 2016 Carsten Wulff Software, Norway
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Created       : wulff at 2016-3-10
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%   This program is free software: you can redistribute it and/or modify
+%%   it under the terms of the GNU General Public License as published by
+%%   the Free Software Foundation, either version 3 of the License, or
+%%   (at your option) any later version.
+%%
+%%   This program is distributed in the hope that it will be useful,
+%%   but WITHOUT ANY WARRANTY; without even the implied warranty of
+%%   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%%   GNU General Public License for more details.
+%%
+%%   You should have received a copy of the GNU General Public License
+%%   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[journal,11pt,letterpaper]{IEEEtran}
+
+\usepackage[final]{graphicx}
+\usepackage{wrapfig}
+
+\ifCLASSINFOpdf
+\graphicspath{{../../pdf/}}
+\DeclareGraphicsExtensions{.pdf}
+\else
+\graphicspath{{../../eps/}}
+\DeclareGraphicsExtensions{.eps}
+\fi
+
+\newcommand{\myfigwidth}{3.3in}
+\newcommand{\myfigwidthb}{3.3in}
+\input{../lib/commands.tex}
+
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+
+
+\input{../../tex/paper.tex}
+
+
+\bibliography{../bib/wulff_compiledsar.bib}
+
+
+\input{../../tex/authors.tex}
+
+\end{document}
